@@ -1,0 +1,37 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+}
+
+.header-nav li {
+  align-self: center;
+}
+.header-nav li:not(:first-child) {
+  margin-left: 3.4vw;
+}
+.header-nav a:hover {
+  color: var(--primary-rajah);
+}
+.logo {
+  width: 240px;
+}
+.profile {
+  cursor: pointer;
+  margin-left: 3.4vw;
+}
+
+/* library styles alteration */
+.ant-dropdown-menu-item button {
+  width: 100%;
+  background: transparent;
+  border: none;
+  text-align: left;
+  font-size: 15px;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+}

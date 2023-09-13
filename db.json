@@ -1,0 +1,77 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "firstname": "zeeshan",
+      "lastname": "naseeb",
+      "email": "zeeshan@test.com",
+      "password": 123456
+    },
+    {
+      "id": 2,
+      "firstname": "haider",
+      "lastname": "ali",
+      "email": "haider@test.com",
+      "password": 123456
+    },
+    {
+      "firstName": "Muhammad",
+      "lastName": "Shajjar",
+      "userEmail": "shajjar@test.com",
+      "password": "123456",
+      "id": 3
+    }
+  ],
+  "tutors": [
+    {
+      "id": 1,
+      "firstname": "sikander",
+      "lastname": "bakht",
+      "email": "sikander@test.com",
+      "password": 123456,
+      "expertiseArea": [
+        "IT",
+        "Business"
+      ]
+    },
+    {
+      "id": 2,
+      "firstname": "raja",
+      "lastname": "shajjar",
+      "email": "shajjar@test.com",
+      "password": 123456,
+      "expertiseArea": [
+        "IT",
+        "Business"
+      ]
+    },
+    {
+      "firstname": "talha",
+      "lastname": "arshad",
+      "email": "talha@test.com",
+      "password": 123456,
+      "expertiseArea": [
+        "IT",
+        "networking"
+      ],
+      "id": 3
+    },
+    {
+      "firstName": "Sir",
+      "lastName": "sir",
+      "userEmail": "sir@test.com",
+      "password": "123456",
+      "expertiesArea": [
+        "test",
+        "Anoterh Test"
+      ],
+      "id": 4
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "title": "What is linux"
+    }
+  ]
+}
