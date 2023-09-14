@@ -1,0 +1,3 @@
+{
+  "/category/:categoryId/threads/:threadId": "/category/:categoryId/threads/:threadId"
+}

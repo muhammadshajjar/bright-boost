@@ -18,7 +18,7 @@ const SignupForm = () => {
     const requestBody = {
       firstName: values.firstname,
       lastName: values.lastname,
-      userEmail: values.email,
+      email: values.email,
       password: values.password,
     };
 

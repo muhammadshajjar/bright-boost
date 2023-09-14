@@ -16,15 +16,18 @@ const LoginForm = () => {
   if (authCtx.role === "student") {
     LOGINAPIURL = "http://localhost:3000/students";
   }
+  if (authCtx.role === "admin") {
+    LOGINAPIURL = "http://localhost:3000/admin";
+  }
 
   const formSubmitHandler = async (values) => {
     try {
       setIsLoading(true);
       const response = await axios.get(`${LOGINAPIURL}?email=${values.email}`);
       if (response.data.length > 0) {
-        const { password } = response.data[0];
+        const { email, password } = response.data[0];
         if (password == values.password) {
-          authCtx.login("Login");
+          authCtx.login(email);
           notification.success({
             message: "Login Successfully!",
           });
@@ -50,9 +53,11 @@ const LoginForm = () => {
 
   return (
     <div className="form">
-      <p>
-        Dont have an account? <Link to="/">SignUp now</Link>{" "}
-      </p>
+      {authCtx.role !== "admin" && (
+        <p>
+          Dont have an account? <Link to="/">SignUp now</Link>{" "}
+        </p>
+      )}
       <Form
         name="basic"
         initialValues={{

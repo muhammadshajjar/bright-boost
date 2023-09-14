@@ -1,0 +1,40 @@
+/* Add this CSS to your stylesheet or component-specific CSS file */
+
+.thread-view {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.column {
+  flex: 1;
+  margin: 0 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.column li {
+  cursor: pointer;
+  margin-bottom: 5px;
+  padding: 5px;
+  background-color: #f0f0f0;
+  transition: background-color 0.2s;
+}
+
+.column li:hover {
+  background-color: #e0e0e0;
+}
+
+.question-details {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Style individual question details as needed */

@@ -17,7 +17,7 @@
     {
       "firstName": "Muhammad",
       "lastName": "Shajjar",
-      "userEmail": "shajjar@test.com",
+      "email": "raja@test.com",
       "password": "123456",
       "id": 3
     }
@@ -55,23 +55,141 @@
         "networking"
       ],
       "id": 3
+    }
+  ],
+  "admin": [
+    {
+      "email": "admin@admin.com",
+      "password": 123456
+    }
+  ],
+  "session": [
+    {
+      "id": 1,
+      "date": "2023-09-11",
+      "studentsAttended": 4,
+      "questionsAnswered": 2
     },
     {
-      "firstName": "Sir",
-      "lastName": "sir",
-      "userEmail": "sir@test.com",
-      "password": "123456",
-      "expertiesArea": [
-        "test",
-        "Anoterh Test"
-      ],
+      "id": 2,
+      "date": "2023-09-12",
+      "studentsAttended": 10,
+      "questionsAnswered": 4
+    },
+    {
+      "date": "2023-09-13",
+      "studentsAttended": 0,
+      "questionsAnswered": 0,
+      "id": 3
+    },
+    {
+      "date": "2023-09-14",
+      "studentsAttended": 0,
+      "questionsAnswered": 0,
       "id": 4
     }
   ],
-  "questions": [
+  "categories": [
     {
       "id": 1,
-      "title": "What is linux"
+      "title": "Information of Technology"
+    },
+    {
+      "id": 2,
+      "title": "Business"
+    }
+  ],
+  "threads": [
+    {
+      "id": 1,
+      "title": "Linux",
+      "questions": [
+        {
+          "id": 1,
+          "title": "What is linux",
+          "answer": "",
+          "askedby": 1,
+          "askedat": "2023-09-13",
+          "answeredBy": null
+        },
+        {
+          "id": 2,
+          "title": "Who invented linux? Explain the history of linux",
+          "answer": "",
+          "askedby": 1,
+          "askedat": "2023-09-13",
+          "answeredBy": null
+        }
+      ],
+      "categoryId": 1
+    },
+    {
+      "id": 2,
+      "title": "Windows",
+      "questions": [
+        {
+          "id": 1,
+          "title": "What is Window",
+          "answer": "",
+          "askedby": 2,
+          "askedat": "2023-09-13",
+          "answeredBy": null
+        }
+      ],
+      "categoryId": 1
+    },
+    {
+      "id": 3,
+      "title": "Ecnomics",
+      "questions": [
+        {
+          "id": 1,
+          "title": "What is Economics",
+          "answer": "",
+          "askedby": 3,
+          "askedat": "2023-09-13",
+          "answeredBy": null
+        }
+      ],
+      "categoryId": 2
+    },
+    {
+      "title": "New Thread",
+      "questions": [
+        {
+          "title": "What is Supply and Demand?",
+          "answer": "",
+          "askedby": 4,
+          "askedat": "2023-09-14",
+          "answeredBy": null
+        }
+      ],
+      "categoryId": "1",
+      "id": 4
+    },
+    {
+      "title": "Test",
+      "questions": [],
+      "categoryId": "1",
+      "id": 5
+    },
+    {
+      "title": "another",
+      "questions": [],
+      "categoryId": "1",
+      "id": 6
+    },
+    {
+      "title": "Thsi is test",
+      "questions": [],
+      "categoryId": "1",
+      "id": 7
+    },
+    {
+      "title": "ttt",
+      "questions": [],
+      "categoryId": "1",
+      "id": 8
     }
   ]
 }

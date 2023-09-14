@@ -14,7 +14,6 @@ const AuthContextProvider = ({ children }) => {
   const [token, setToken] = useState(storedToken || "");
   const [role, setRole] = useState("");
   const login = (token) => {
-    console.log("loging");
     setToken(token);
     localStorage.setItem("token", token);
   };
