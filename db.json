@@ -71,10 +71,10 @@
       "questionsAnswered": 2
     },
     {
-      "id": 2,
       "date": "2023-09-12",
-      "studentsAttended": 10,
-      "questionsAnswered": 4
+      "studentsAttended": 100,
+      "questionsAnswered": 4,
+      "id": 2
     },
     {
       "date": "2023-09-13",
@@ -87,12 +87,24 @@
       "studentsAttended": 0,
       "questionsAnswered": 0,
       "id": 4
+    },
+    {
+      "date": "2023-09-15",
+      "studentsAttended": 0,
+      "questionsAnswered": 0,
+      "id": 5
+    },
+    {
+      "date": "2023-09-16",
+      "studentsAttended": 0,
+      "questionsAnswered": 0,
+      "id": 6
     }
   ],
   "categories": [
     {
       "id": 1,
-      "title": "Information of Technology"
+      "title": "Information of Technology updated"
     },
     {
       "id": 2,
@@ -105,91 +117,143 @@
       "title": "Linux",
       "questions": [
         {
-          "id": 1,
-          "title": "What is linux",
-          "answer": "",
-          "askedby": 1,
-          "askedat": "2023-09-13",
-          "answeredBy": null
+          "id": "0.2151985695180425",
+          "title": "TEST?",
+          "askedby": "zeeshan naseeb",
+          "askedat": "2023-09-16T11:27:38.146Z",
+          "assigned": {
+            "tutor": "raja shajjar",
+            "assignedAt": "2023-09-16T13:20:23.686Z",
+            "completed": true,
+            "completedAt": "2023-09-16T14:45:32.823Z"
+          },
+          "discussion": []
         },
         {
-          "id": 2,
-          "title": "Who invented linux? Explain the history of linux",
-          "answer": "",
-          "askedby": 1,
-          "askedat": "2023-09-13",
-          "answeredBy": null
+          "id": "0.6305490236467137",
+          "title": "Anotehr teset",
+          "askedby": "zeeshan naseeb",
+          "askedat": "2023-09-16T11:27:44.990Z",
+          "assigned": {
+            "tutor": "raja shajjar",
+            "assignedAt": "2023-09-16T13:41:06.003Z",
+            "completed": true,
+            "completedAt": "2023-09-16T14:47:07.183Z"
+          },
+          "discussion": []
+        },
+        {
+          "id": "0.537736214470051",
+          "title": "Anotehr test",
+          "askedby": "raja shajjar",
+          "askedat": "2023-09-16T13:45:56.037Z",
+          "answeredBy": null,
+          "assigned": {
+            "tutor": "raja shajjar",
+            "assignedAt": "2023-09-16T13:46:01.389Z",
+            "completed": true,
+            "completedAt": "2023-09-16T14:48:15.735Z"
+          },
+          "discussion": []
+        },
+        {
+          "id": "0.33717383714262805",
+          "title": "teset?",
+          "askedby": "raja shajjar",
+          "askedat": "2023-09-16T13:47:08.540Z",
+          "answeredBy": null,
+          "assigned": {
+            "tutor": "raja shajjar",
+            "assignedAt": "2023-09-16T13:47:12.588Z",
+            "completed": true,
+            "completedAt": "2023-09-16T15:02:21.438Z"
+          },
+          "discussion": [
+            {
+              "reply": "raja shajjar",
+              "repliedAt": "2023-09-16T15:02:12.227Z",
+              "content": "a particular process or method for trying or assessing. a set of questions, problems, or the like, used as a means of evaluating the abilities, aptitudes, ..."
+            }
+          ]
+        },
+        {
+          "id": "0.9743463850127512",
+          "title": "New Qeustion",
+          "askedby": "raja shajjar",
+          "askedat": "2023-09-16T14:34:07.157Z",
+          "answeredBy": null,
+          "assigned": {
+            "tutor": "raja shajjar",
+            "assignedAt": "2023-09-16T14:34:11.319Z",
+            "completed": true,
+            "completedAt": "2023-09-16T14:53:38.662Z"
+          },
+          "discussion": []
         }
       ],
       "categoryId": 1
     },
     {
-      "id": 2,
       "title": "Windows",
       "questions": [
         {
-          "id": 1,
-          "title": "What is Window",
-          "answer": "",
-          "askedby": 2,
-          "askedat": "2023-09-13",
-          "answeredBy": null
+          "id": "0.7723862769128929",
+          "title": "What is windows",
+          "askedby": "zeeshan naseeb",
+          "askedat": "2023-09-16T09:15:29.018Z",
+          "answeredBy": null,
+          "assigned": {
+            "tutor": "raja shajjar",
+            "assignedAt": "2023-09-16T13:42:18.068Z",
+            "completed": false,
+            "completedAt": ""
+          },
+          "discussion": [
+            {
+              "reply": "raja shajjar",
+              "repliedAt": "2023-09-16T09:16:29.978Z",
+              "content": "Microsoft Windows is a group of several proprietary graphical operating system families developed and marketed by Microsoft. Each family caters to a certain sector of the computing industry. "
+            }
+          ]
+        },
+        {
+          "id": "0.09329037408277685",
+          "title": "TEST?",
+          "askedby": "raja shajjar",
+          "askedat": "2023-09-16T13:43:08.116Z",
+          "answeredBy": null,
+          "assigned": {
+            "tutor": "raja shajjar",
+            "assignedAt": "2023-09-16T13:43:50.571Z",
+            "completed": false,
+            "completedAt": ""
+          },
+          "discussion": []
         }
       ],
-      "categoryId": 1
+      "categoryId": "1",
+      "id": 12
     },
     {
-      "id": 3,
-      "title": "Ecnomics",
+      "title": "Economics",
       "questions": [
         {
-          "id": 1,
-          "title": "What is Economics",
-          "answer": "",
-          "askedby": 3,
-          "askedat": "2023-09-13",
-          "answeredBy": null
+          "id": "0.5349031975303922",
+          "title": "What is Ecnomics?",
+          "askedby": "raja shajjar",
+          "askedat": "2023-09-16T14:55:17.623Z",
+          "answeredBy": null,
+          "assigned": {
+            "tutor": "raja shajjar",
+            "assignedAt": "2023-09-16T14:55:21.416Z",
+            "completed": true,
+            "completedAt": "2023-09-16T14:55:26.830Z"
+          },
+          "discussion": []
         }
       ],
-      "categoryId": 2
-    },
-    {
-      "title": "New Thread",
-      "questions": [
-        {
-          "title": "What is Supply and Demand?",
-          "answer": "",
-          "askedby": 4,
-          "askedat": "2023-09-14",
-          "answeredBy": null
-        }
-      ],
-      "categoryId": "1",
-      "id": 4
-    },
-    {
-      "title": "Test",
-      "questions": [],
-      "categoryId": "1",
-      "id": 5
-    },
-    {
-      "title": "another",
-      "questions": [],
-      "categoryId": "1",
-      "id": 6
-    },
-    {
-      "title": "Thsi is test",
-      "questions": [],
-      "categoryId": "1",
-      "id": 7
-    },
-    {
-      "title": "ttt",
-      "questions": [],
-      "categoryId": "1",
-      "id": 8
+      "categoryId": "2",
+      "id": 13
     }
   ]
 }

@@ -1,17 +1,48 @@
-/* Add this CSS to your stylesheet or component-specific CSS file */
-
-.thread-view {
+.page-heading {
+  margin-top: 20px;
+}
+.page-heading div {
+  background-color: var(--primary-blue);
+  height: 40px;
+  width: 40px;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.page-heading h1 {
+  font-size: 28px;
+  margin-right: 4px;
+}
+.page-heading span {
+  font-size: 18px;
+  font-weight: 400;
+  margin-left: 4px;
+  color: var(--primary-blue);
+}
+.thread-view {
+  margin-top: 20px;
+  height: 77vh;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.title {
+  color: var(--primary-headings);
+  font-size: 22px;
+  margin: 10px 0;
 }
 
 .column {
-  flex: 1;
-  margin: 0 10px;
   border: 1px solid #ccc;
+
   padding: 10px;
+}
+.discussion {
+  display: flex;
+  flex-direction: column;
 }
 
 .column ul {
@@ -25,16 +56,95 @@
   padding: 5px;
   background-color: #f0f0f0;
   transition: background-color 0.2s;
+  border-radius: 3px;
 }
 
 .column li:hover {
-  background-color: #e0e0e0;
+  background-color: #93a4ec;
+}
+
+.new-action {
+  width: "100%";
+  margin-top: 20px;
+}
+
+.new-action input {
+  padding: 0px 4px;
+}
+.new-action button {
+  padding: 0px 8px;
+  background-color: var(--primary-blue);
 }
 
 .question-details {
-  background-color: #f9f9f9;
+  background-color: #f0f0f0;
   padding: 10px;
-  border: 1px solid #ccc;
+  border-radius: 3px;
 }
 
-/* Style individual question details as needed */
+.question-details-time {
+  font-size: 15px;
+  width: 60%;
+  margin-left: auto;
+}
+.question-details-time span {
+  font-weight: bold;
+}
+.discussion-details {
+  margin-top: 10px;
+  width: 95%;
+  margin-left: auto;
+  flex: 1;
+  max-height: 460px;
+  overflow-y: scroll;
+  margin-bottom: 20px;
+}
+
+.discussion-details > div {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 3px;
+}
+
+.reply-area {
+  display: flex;
+  flex-direction: column;
+}
+.reply-area textarea {
+  height: 100px;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  font-family: "Poppins", sans-serif;
+}
+.reply-area button {
+  align-self: flex-end;
+  padding: 0px 20px;
+  background-color: var(--primary-blue);
+  margin-top: 10px;
+}
+
+.feedback {
+  color: red;
+  font-size: 14px;
+}
+.tutor-action {
+  margin-top: 15px;
+  align-self: flex-end;
+}
+.tutor-action-primary {
+  background-color: var(--primary-rajah);
+  margin-left: 10px;
+  padding: 0 10px;
+}
+.tutor-action-secondary {
+  color: var(--primary-rajah);
+  font-weight: bold;
+}
+
+.assign-container {
+  font-size: 14px;
+  font-style: italic;
+  margin: 0 auto;
+}

@@ -56,7 +56,11 @@ const Home = () => {
   return (
     <Row>
       {categories.map((category) => (
-        <Link to="/discussion-fourm" state={category.id} key={category.id}>
+        <Link
+          to="/discussion-fourm"
+          state={{ id: category.id, title: category.title }}
+          key={category.id}
+        >
           {category.title}
         </Link>
       ))}

@@ -24,10 +24,19 @@ const LoginForm = () => {
     try {
       setIsLoading(true);
       const response = await axios.get(`${LOGINAPIURL}?email=${values.email}`);
+      console.log(response);
       if (response.data.length > 0) {
-        const { email, password } = response.data[0];
+        const { password, id, firstname, lastname } = response.data[0];
+
+        console.log(firstname, lastname);
+        const userData = {
+          id,
+          firstname,
+          lastname,
+        };
+
         if (password == values.password) {
-          authCtx.login(email);
+          authCtx.login(userData);
           notification.success({
             message: "Login Successfully!",
           });

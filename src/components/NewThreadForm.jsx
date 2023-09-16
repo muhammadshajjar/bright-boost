@@ -1,13 +1,15 @@
-import React from "react";
+import { useContext } from "react";
+import "./NewThreadForm.css";
 import { MinusCircleOutlined, PlusOutlined } from "@ant-design/icons";
 import { Button, Form, Input } from "antd";
+import { AuthContext } from "../context/auth-context";
 const formItemLayout = {
   labelCol: {
     xs: {
       span: 24,
     },
     sm: {
-      span: 4,
+      span: 6,
     },
   },
   wrapperCol: {
@@ -27,21 +29,23 @@ const formItemLayoutWithOutLabel = {
     },
     sm: {
       span: 20,
-      offset: 4,
+      offset: 6,
     },
   },
 };
 const NewThreadForm = ({ onGetEnteredValues }) => {
+  const { firstName, lastName } = useContext(AuthContext);
   const onFinish = (values) => {
     const { questions } = values;
     const transformedQuestion = questions.map((question) => {
       return {
         id: Math.random().toString(),
         title: question,
-        answer: "",
-        askedby: 1,
-        askedat: new Date().toISOString().split("T")[0],
+        askedby: `${firstName} ${lastName}`,
+        askedat: new Date(),
         answeredBy: null,
+        assigned: {},
+        discussion: [],
       };
     });
 
@@ -52,9 +56,7 @@ const NewThreadForm = ({ onGetEnteredValues }) => {
       name="dynamic_form_item"
       {...formItemLayoutWithOutLabel}
       onFinish={onFinish}
-      style={{
-        maxWidth: 600,
-      }}
+      className="new-question"
     >
       <Form.List name="questions">
         {(fields, { add, remove }, { errors }) => (
@@ -81,7 +83,8 @@ const NewThreadForm = ({ onGetEnteredValues }) => {
                   <Input
                     placeholder="Your Question"
                     style={{
-                      width: "60%",
+                      width: "100%",
+                      padding: "5px",
                     }}
                   />
                 </Form.Item>
@@ -98,7 +101,7 @@ const NewThreadForm = ({ onGetEnteredValues }) => {
                 type="dashed"
                 onClick={() => add()}
                 style={{
-                  width: "60%",
+                  width: "70%",
                 }}
                 icon={<PlusOutlined />}
               >
@@ -111,8 +114,8 @@ const NewThreadForm = ({ onGetEnteredValues }) => {
         )}
       </Form.List>
       <Form.Item>
-        <Button type="primary" htmlType="submit">
-          Submit
+        <Button type="primary" htmlType="submit" className="add-action">
+          Add
         </Button>
       </Form.Item>
     </Form>

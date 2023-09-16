@@ -1,0 +1,8 @@
+.new-question {
+  margin-top: 20px;
+}
+
+.add-action {
+  padding: 0 10px;
+  background-color: var(--primary-blue);
+}
