@@ -29,10 +29,7 @@
       "lastname": "bakht",
       "email": "sikander@test.com",
       "password": 123456,
-      "expertiseArea": [
-        "IT",
-        "Business"
-      ]
+      "expertiseArea": ["IT", "Business"]
     },
     {
       "id": 2,
@@ -40,20 +37,14 @@
       "lastname": "shajjar",
       "email": "shajjar@test.com",
       "password": 123456,
-      "expertiseArea": [
-        "IT",
-        "Business"
-      ]
+      "expertiseArea": ["IT", "Business"]
     },
     {
       "firstname": "talha",
       "lastname": "arshad",
       "email": "talha@test.com",
       "password": 123456,
-      "expertiseArea": [
-        "IT",
-        "networking"
-      ],
+      "expertiseArea": ["IT", "networking"],
       "id": 3
     }
   ],
@@ -99,16 +90,44 @@
       "studentsAttended": 0,
       "questionsAnswered": 0,
       "id": 6
+    },
+    {
+      "date": "2023-09-17",
+      "studentsAttended": 0,
+      "questionsAnswered": 0,
+      "id": 7
+    },
+    {
+      "date": "2023-09-19",
+      "studentsAttended": 0,
+      "questionsAnswered": 0,
+      "id": 8
     }
   ],
   "categories": [
     {
       "id": 1,
-      "title": "Information of Technology updated"
+      "title": "Information T."
     },
     {
       "id": 2,
       "title": "Business"
+    },
+    {
+      "id": 3,
+      "title": "Law"
+    },
+    {
+      "id": 4,
+      "title": "Management"
+    },
+    {
+      "id": 5,
+      "title": "Science"
+    },
+    {
+      "id": 6,
+      "title": "Engineering"
     }
   ],
   "threads": [
@@ -254,6 +273,22 @@
       ],
       "categoryId": "2",
       "id": 13
+    },
+    {
+      "title": "ICT",
+      "questions": [
+        {
+          "id": "0.11970182749036273",
+          "title": "What is ICT",
+          "askedby": "zeeshan naseeb",
+          "askedat": "2023-09-19T06:57:03.631Z",
+          "answeredBy": null,
+          "assigned": {},
+          "discussion": []
+        }
+      ],
+      "categoryId": "1",
+      "id": 14
     }
   ]
 }

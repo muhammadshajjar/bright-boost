@@ -1,0 +1,187 @@
+.hero {
+  height: calc(100vh - 113px);
+  background-image: url(../assets/hero-illustration.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right -35px;
+  background-size: 800px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+.hero-content h1 {
+  font-size: 60px;
+  line-height: 1.3;
+  color: var(--primary-headings);
+  letter-spacing: 0.5px;
+}
+.hero-content h1 span {
+  color: var(--primary-yellow);
+}
+.hero-content p {
+  margin: 10px 0;
+  font-size: 17px;
+  letter-spacing: 1.3;
+}
+.hero-content button {
+  height: 53px;
+  padding: 0 40px;
+  border-radius: 30px;
+  background-color: var(--primary-yellow);
+  margin-top: 20px;
+}
+
+.categories {
+  background-color: var(--light-bg-yellow);
+}
+
+.categories-content {
+  padding: 90px;
+}
+.categories-content h2 {
+  text-align: center;
+  color: var(--primary-headings);
+  font-size: 34px;
+}
+.categories-content > p {
+  text-align: center;
+  margin-top: 7px;
+  margin-bottom: 30px;
+}
+
+.item-container {
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.item-container div {
+  background-color: white;
+  width: 150px;
+  text-align: center;
+  padding: 15px 0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.why-us {
+  margin-top: 80px;
+}
+.why-us h2 {
+  font-size: 38px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+.why-us p {
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+
+.why-us ul {
+  margin-top: 10px;
+}
+
+.review {
+  margin-top: 70px;
+  background-color: var(--light-bg-yellow);
+  padding: 60px;
+}
+.review-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.review h2 {
+  font-size: 32px;
+  letter-spacing: 1px;
+}
+
+.testimonials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.testimonial__card {
+  position: relative;
+  max-width: 22.75rem;
+  padding: 1.5rem 1.125rem 1.1875rem 1.125rem;
+  background-color: white;
+  margin-bottom: 1.25rem;
+  border-radius: 0.5rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.quote__text {
+  font-size: 0.8125rem;
+  margin: 0;
+}
+
+.profile {
+  margin-top: 1.1875rem;
+  display: flex;
+}
+
+.profile__img {
+  height: 2.2rem;
+  width: 2.2rem;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+}
+
+.profile__title {
+  font-size: 14px;
+}
+.profile__disc {
+  font-size: 12px;
+}
+
+footer {
+  margin-top: 90px;
+  text-align: center;
+}
+.footer-container {
+  border-top: 1px solid gainsboro;
+  padding: 40px 0 10px 0;
+}
+.footer-desc {
+  max-width: 500px;
+  margin: 0 auto;
+  font-size: 15px;
+}
+
+.footer-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+.footer-logo {
+  width: 300px;
+}
+.footer-media a {
+  background-color: var(--primary-yellow);
+  height: 45px;
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+}
+.footer-media a:not(:first-child) {
+  margin-left: 20px;
+}
+.attribution {
+  text-align: left;
+  border-top: 1px solid gainsboro;
+  border-bottom: 1px solid gainsboro;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.attribution p {
+  font-size: 15px;
+}

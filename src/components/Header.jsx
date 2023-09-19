@@ -17,7 +17,7 @@ const Header = () => {
   const USERITEMS = [
     {
       key: "1",
-      label: <Link to="/admin">Admin</Link>,
+      label: <Link to="/admin">Settings</Link>,
       icon: <GrUserAdmin />,
     },
     {
@@ -60,6 +60,7 @@ const Header = () => {
                   menu={{
                     items: INTROITEMS,
                   }}
+                  trigger={["hover"]}
                 >
                   <a>
                     Introduction
@@ -80,10 +81,10 @@ const Header = () => {
                   items: USERITEMS,
                 }}
                 trigger={["click"]}
-                className="profile"
+                className="user-profile"
               >
                 <Avatar
-                  style={{ backgroundColor: " #fac370" }}
+                  style={{ backgroundColor: "#ffb84d" }}
                   icon={<AiOutlineUser />}
                   size="large"
                 />

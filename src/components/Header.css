@@ -20,7 +20,7 @@
 .logo {
   width: 240px;
 }
-.profile {
+.user-profile {
   cursor: pointer;
   margin-left: 3.4vw;
 }
@@ -34,4 +34,11 @@
   font-size: 15px;
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
+}
+
+.ant-dropdown-menu-item {
+  padding: 7px;
+}
+.ant-dropdown-menu-item:hover {
+  cursor: pointer;
 }
