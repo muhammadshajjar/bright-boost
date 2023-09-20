@@ -16,6 +16,8 @@ import { BiArrowBack } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import { getTotalTimeToComplete } from "../helper/getTotalTimeToComplete";
 
+import { notification } from "antd";
+
 const DiscussionForum = () => {
   const location = useLocation();
   const [selectedThread, setSelectedThread] = useState(null);
@@ -68,7 +70,10 @@ const DiscussionForum = () => {
       setThreads((prevThreads) => {
         return [...prevThreads, response.data];
       });
-      alert("NEw Thread ADDEd Successfully");
+
+      notification.success({
+        message: "New Thread Added!",
+      });
     } catch (e) {
       alert(e.message);
     }
@@ -88,7 +93,9 @@ const DiscussionForum = () => {
         `http://localhost:3000/threads/${updateSelectedThread.id}`,
         updateSelectedThread
       );
-      alert("New Question added Successfully!");
+      notification.success({
+        message: "New Question added Successfully!",
+      });
     } catch (e) {
       alert(e.message);
     }
@@ -130,7 +137,9 @@ const DiscussionForum = () => {
         updateSelectedThread
       );
       setAnswer("");
-      alert("Answer posted Successfully!");
+      notification.success({
+        message: "Answer posted Successfully",
+      });
     } catch (e) {
       alert(e.message);
     }
@@ -170,15 +179,15 @@ const DiscussionForum = () => {
 
       setSelectedThread(updateSelectedThread);
       setSelectedQuestion(updateSelectedQuestion);
-      alert("Question Assigned !");
+      notification.success({
+        message: "Question is Assigned!",
+      });
     } catch (e) {
       alert(e.message);
     }
   };
 
   const markAsCompleteHandler = async () => {
-    console.log("Mark AS complete");
-
     let updateSelectedThread = { ...selectedThread };
     let updateSelectedQuestion = { ...selectedQuestion };
 
@@ -202,7 +211,10 @@ const DiscussionForum = () => {
         `http://localhost:3000/threads/${updateSelectedThread.id}`,
         updateSelectedThread
       );
-      alert("Question Mark as completed !");
+
+      notification.success({
+        message: "Question Mark as completed !!",
+      });
     } catch (e) {
       alert(e.message);
     }

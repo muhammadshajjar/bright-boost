@@ -5,7 +5,7 @@
   border: 1px solid rgb(215, 215, 215);
 }
 .card__left {
-  background-color: var(--primary-blue);
+  background-color: var(--primary-yellow);
   border-radius: 10px;
   padding: 20px;
   display: flex;
@@ -49,9 +49,4 @@
   margin-top: 10px;
   width: 100%;
   border-radius: 3px !important;
-  background-color: var(--primary-blue);
-  color: white;
-}
-.auth-btn button:hover {
-  background-color: #0a0a0aef !important;
 }

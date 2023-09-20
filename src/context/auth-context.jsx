@@ -19,6 +19,8 @@ const AuthContextProvider = ({ children }) => {
   const [firstName, setFirstName] = useState(storedFirstName || "");
   const [lastName, setLastName] = useState(storedLastName || "");
   const login = (data) => {
+    console.log(data);
+    console.log("IN THE LOGIN" + data);
     setToken(data.id.toString());
     setFirstName(data.firstname);
     setLastName(data.lastname);
