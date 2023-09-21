@@ -60,7 +60,7 @@
 }
 
 .column li:hover {
-  background-color: #93a4ec;
+  background-color: var(--light-bg-yellow);
 }
 
 .new-action {

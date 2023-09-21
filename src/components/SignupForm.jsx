@@ -16,8 +16,8 @@ const SignupForm = () => {
 
   const formSubmitHandler = async (values) => {
     const requestBody = {
-      firstName: values.firstname,
-      lastName: values.lastname,
+      firstname: values.firstname,
+      lastname: values.lastname,
       email: values.email,
       password: values.password,
     };
@@ -28,6 +28,7 @@ const SignupForm = () => {
       SIGNUPAPIURL = "http://localhost:3000/students";
       successMessage = "Student Account Created Successfully!";
     } else {
+      SIGNUPAPIURL = "http://localhost:3000/tutors";
       requestBody.expertiesArea = expertiesArea;
     }
 

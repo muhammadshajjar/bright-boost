@@ -223,7 +223,48 @@ const DiscussionForum = () => {
     setSelectedThread(updateSelectedThread);
   };
 
-  console.log(selectedThread);
+  console.log(selectedQuestion);
+
+  let toShowTheDiscussionForum;
+
+  if (
+    role === "student" &&
+    selectedQuestion &&
+    selectedQuestion.discussion.length > 0
+  ) {
+    if (selectedQuestion && !selectedQuestion.assigned.completed) {
+      toShowTheDiscussionForum = (
+        <div className="reply-area">
+          <textarea
+            type="text"
+            placeholder="Start discussion..."
+            onChange={(e) => setAnswer(e.target.value)}
+            value={answer}
+          />
+          <Button type="primary" onClick={handleAnswerSubmit}>
+            Post
+          </Button>
+        </div>
+      );
+    }
+  } else if (role === "tutor") {
+    if (selectedQuestion && !selectedQuestion.assigned.completed) {
+      toShowTheDiscussionForum = (
+        <div className="reply-area">
+          <textarea
+            type="text"
+            placeholder="Start discussion..."
+            onChange={(e) => setAnswer(e.target.value)}
+            value={answer}
+          />
+          <Button type="primary" onClick={handleAnswerSubmit}>
+            Post
+          </Button>
+        </div>
+      );
+    }
+  }
+
   return (
     <div className="container">
       <Row className="page-heading" align="middle">
@@ -417,14 +458,20 @@ const DiscussionForum = () => {
               </div>
             </>
           )}
-          {!selectedQuestion && (
-            <p className="feedback">Please Select any question</p>
-          )}
+
+          {/* {role === "student" &&
+            selectedQuestion &&
+            selectedQuestion.discussion.length < 1 && (
+              <>
+                <p>First tutor continue the answer</p>
+              </>
+            )}
+
           {selectedQuestion && !selectedQuestion.assigned.completed && (
             <div className="reply-area">
               <textarea
                 type="text"
-                placeholder="Post your answer..."
+                placeholder="Start discussion..."
                 onChange={(e) => setAnswer(e.target.value)}
                 value={answer}
               />
@@ -432,7 +479,9 @@ const DiscussionForum = () => {
                 Post
               </Button>
             </div>
-          )}
+          )} */}
+
+          {toShowTheDiscussionForum}
         </Col>
       </Row>
     </div>

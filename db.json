@@ -20,6 +20,30 @@
       "email": "raja@test.com",
       "password": "123456",
       "id": 3
+    },
+    {
+      "firstName": "Muhammad",
+      "lastName": "Shajjar",
+      "email": "m@m.com",
+      "password": "12345678",
+      "id": 4
+    },
+    {
+      "firstName": "Muhammad",
+      "lastName": "Shajjar",
+      "email": "t@t.com",
+      "password": "123456",
+      "id": 5
+    },
+    {
+      "firstName": "Muhammad",
+      "lastName": "Shajjar",
+      "email": "tt@tt.com",
+      "password": "123456",
+      "expertiesArea": [
+        "TEST"
+      ],
+      "id": 6
     }
   ],
   "tutors": [
@@ -55,6 +79,16 @@
         "networking"
       ],
       "id": 3
+    },
+    {
+      "firstname": "Muhammad",
+      "lastname": "Shajjar",
+      "email": "tt@test.com",
+      "password": "123456",
+      "expertiesArea": [
+        "TEST "
+      ],
+      "id": 4
     }
   ],
   "admin": [
@@ -120,6 +154,12 @@
       "studentsAttended": 0,
       "questionsAnswered": 0,
       "id": 9
+    },
+    {
+      "date": "2023-09-21",
+      "studentsAttended": 0,
+      "questionsAnswered": 0,
+      "id": 10
     }
   ],
   "categories": [
@@ -383,6 +423,72 @@
       ],
       "categoryId": "1",
       "id": 16
+    },
+    {
+      "title": "IT",
+      "questions": [
+        {
+          "id": "0.09763133050227113",
+          "title": "TEST?",
+          "askedby": "Muhammad Shajjar",
+          "askedat": "2023-09-21T04:50:32.992Z",
+          "answeredBy": null,
+          "assigned": {
+            "tutor": "Muhammad Shajjar",
+            "assignedAt": "2023-09-21T04:50:43.094Z",
+            "completed": true,
+            "completedAt": "2023-09-21T06:14:16.713Z"
+          },
+          "discussion": [
+            {
+              "reply": "Muhammad Shajjar",
+              "repliedAt": "2023-09-21T06:13:16.959Z",
+              "content": "Test is the qustion used for test the project and It will surely used for that purpose only?\n"
+            }
+          ]
+        },
+        {
+          "id": "0.5839809806717002",
+          "title": "What is LInux?",
+          "askedby": "Muhammad Shajjar",
+          "askedat": "2023-09-21T04:53:17.760Z",
+          "answeredBy": null,
+          "assigned": {
+            "tutor": "Muhammad Shajjar",
+            "assignedAt": "2023-09-21T04:53:30.293Z",
+            "completed": false,
+            "completedAt": ""
+          },
+          "discussion": []
+        },
+        {
+          "id": "0.052406154532653515",
+          "title": "TEST?",
+          "askedby": "raja shajjar",
+          "askedat": "2023-09-21T05:30:25.811Z",
+          "answeredBy": null,
+          "assigned": {
+            "tutor": "raja shajjar",
+            "assignedAt": "2023-09-21T05:36:07.749Z",
+            "completed": false,
+            "completedAt": ""
+          },
+          "discussion": [
+            {
+              "reply": "raja shajjar",
+              "repliedAt": "2023-09-21T05:36:21.001Z",
+              "content": "What is test i will tell you? don't worry."
+            },
+            {
+              "reply": "zeeshan naseeb",
+              "repliedAt": "2023-09-21T06:11:08.496Z",
+              "content": "Yeah I understand it little bit and i'll continue develping it near futture."
+            }
+          ]
+        }
+      ],
+      "categoryId": "6",
+      "id": 17
     }
   ]
 }

@@ -38,6 +38,8 @@ const LoginForm = () => {
           lastname,
         };
 
+        console.log(firstname, lastname);
+
         if (password == values.password) {
           console.log("HERE");
           authCtx.login(userData);
