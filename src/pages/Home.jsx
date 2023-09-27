@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
+
 import "./Home.css";
 import axios from "axios";
 import { Row, Col, Button } from "antd";
@@ -21,38 +22,39 @@ const CATEGORIESAPIURL = "http://localhost:3000/categories";
 
 const Home = () => {
   const [categories, setCategories] = useState([]);
+
   useEffect(() => {
-    const checkSession = async () => {
-      try {
-        const response = await axios.get(SESSIONSAPIURL);
-        const sessions = response.data;
+    // const checkSession = async () => {
+    //   try {
+    //     const response = await axios.get(SESSIONSAPIURL);
+    //     const sessions = response.data;
 
-        if (sessions.length === 0) {
-          createNewSession();
-        } else {
-          const lastSession = sessions[sessions.length - 1];
+    //     if (sessions.length === 0) {
+    //       createNewSession();
+    //     } else {
+    //       const lastSession = sessions[sessions.length - 1];
 
-          const currentDate = new Date().toISOString().split("T")[0];
+    //       const currentDate = new Date().toISOString().split("T")[0];
 
-          if (lastSession.date !== currentDate) {
-            createNewSession();
-          }
-        }
-      } catch (e) {
-        alert(e.message);
-      }
-    };
+    //       if (lastSession.date !== currentDate) {
+    //         createNewSession();
+    //       }
+    //     }
+    //   } catch (e) {
+    //     alert(e.message);
+    //   }
+    // };
 
-    const createNewSession = async () => {
-      const currentDate = new Date().toISOString().split("T")[0];
-      const newSession = {
-        date: currentDate,
-        studentsAttended: 0,
-        questionsAnswered: 0,
-      };
+    // const createNewSession = async () => {
+    //   const currentDate = new Date().toISOString().split("T")[0];
+    //   const newSession = {
+    //     date: currentDate,
+    //     studentsAttended: 0,
+    //     questionsAnswered: 0,
+    //   };
 
-      await axios.post(SESSIONSAPIURL, newSession);
-    };
+    //   await axios.post(SESSIONSAPIURL, newSession);
+    // };
 
     const getAllCategories = async () => {
       try {
@@ -62,7 +64,8 @@ const Home = () => {
         alert(e.message);
       }
     };
-    checkSession();
+
+    // checkSession();
     getAllCategories();
   }, []);
 

@@ -1,0 +1,41 @@
+.stats-container {
+  height: 70vh;
+  margin-top: 50px;
+}
+
+.stats-container > div {
+  border: 1px solid #ccc;
+  min-width: 200px;
+}
+.stats-head {
+  padding: 40px 0px;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  background-color: var(--light-bg-yellow);
+}
+.stats-content {
+  padding: 5px;
+}
+.tutor-stats {
+  height: 260px;
+  overflow: scroll;
+}
+.stats-content h3 {
+  margin: 3px 0;
+}
+
+.count-stats {
+  border-radius: 8px;
+  background-color: var(--light-bg-yellow);
+  padding: 10px;
+}
+.count-stats span {
+  font-weight: 400;
+  margin-left: 2px;
+}
+.count-stats h4 {
+  margin-top: 4px;
+}
+.answering-time {
+  margin-top: 7px;
+}

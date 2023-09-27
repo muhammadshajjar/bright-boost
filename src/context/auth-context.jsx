@@ -18,9 +18,8 @@ const AuthContextProvider = ({ children }) => {
   const [role, setRole] = useState(storedRole || "");
   const [firstName, setFirstName] = useState(storedFirstName || "");
   const [lastName, setLastName] = useState(storedLastName || "");
+  const [activeSessionId, setActiveSessionId] = useState("");
   const login = (data) => {
-    console.log(data);
-    console.log("IN THE LOGIN" + data);
     setToken(data.id.toString());
     setFirstName(data.firstname);
     setLastName(data.lastname);
@@ -46,16 +45,21 @@ const AuthContextProvider = ({ children }) => {
     setRole("");
     localStorage.removeItem("role");
   };
+  const activeSession = (id) => {
+    setActiveSessionId(id);
+  };
 
   const value = {
     token,
     role,
     firstName,
     lastName,
+    activeSessionId,
     login,
     logout,
     specifyRole,
     removeRole,
+    activeSession,
   };
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 };

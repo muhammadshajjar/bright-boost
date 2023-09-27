@@ -1,0 +1,18 @@
+.skills {
+  display: flex;
+  gap: 10px;
+}
+.skills li {
+  padding: 5px 8px;
+  background-color: var(--primary-yellow);
+  border-radius: 4px;
+}
+.avaliable-tutor {
+  padding: 10px 0px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+.avaliable-tutor p {
+  margin-bottom: 5px;
+}

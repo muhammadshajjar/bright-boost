@@ -44,6 +44,13 @@
         "TEST"
       ],
       "id": 6
+    },
+    {
+      "firstname": "Wasif",
+      "lastname": "Shahid",
+      "email": "wasif@test.com",
+      "password": "123456",
+      "id": 7
     }
   ],
   "tutors": [
@@ -102,64 +109,90 @@
   ],
   "session": [
     {
-      "id": 1,
-      "date": "2023-09-11",
-      "studentsAttended": 4,
-      "questionsAnswered": 2
-    },
-    {
-      "date": "2023-09-12",
-      "studentsAttended": 100,
-      "questionsAnswered": 4,
-      "id": 2
-    },
-    {
-      "date": "2023-09-13",
-      "studentsAttended": 0,
-      "questionsAnswered": 0,
-      "id": 3
-    },
-    {
-      "date": "2023-09-14",
-      "studentsAttended": 0,
-      "questionsAnswered": 0,
-      "id": 4
-    },
-    {
-      "date": "2023-09-15",
-      "studentsAttended": 0,
-      "questionsAnswered": 0,
-      "id": 5
-    },
-    {
-      "date": "2023-09-16",
-      "studentsAttended": 0,
-      "questionsAnswered": 0,
-      "id": 6
-    },
-    {
       "date": "2023-09-17",
       "studentsAttended": 0,
       "questionsAnswered": 0,
+      "tutorsJoind": [
+        {
+          "tutorID": 2
+        },
+        {
+          "tutorID": 2
+        }
+      ],
       "id": 7
     },
     {
       "date": "2023-09-19",
       "studentsAttended": 0,
-      "questionsAnswered": 0,
+      "questionsAnswered": 2,
+      "tutorsJoind": [
+        {
+          "tutorID": 2
+        }
+      ],
       "id": 8
     },
     {
       "date": "2023-09-20",
       "studentsAttended": 0,
       "questionsAnswered": 0,
-      "id": 9
+      "tutorsJoind": [
+        {
+          "tutorID": 1
+        },
+        {
+          "tutorID": 2
+        }
+      ],
+      "id": 4
     },
     {
       "date": "2023-09-21",
       "studentsAttended": 0,
       "questionsAnswered": 0,
+      "tutorsJoind": [
+        {
+          "tutorID": 4
+        }
+      ],
       "id": 10
+    },
+    {
+      "date": "2023-09-22",
+      "studentsAttended": 0,
+      "questionsAnswered": 0,
+      "tutorsJoind": [
+        {
+          "tutorID": 4
+        }
+      ],
+      "id": 11
+    },
+    {
+      "date": "2023-09-25",
+      "studentsAttended": 2,
+      "questionsAnswered": 0,
+      "tutorsJoind": [
+        {
+          "tutorID": 4
+        }
+      ],
+      "id": 12
+    },
+    {
+      "date": "2023-09-26",
+      "studentsAttended": 1,
+      "questionsAnswered": 0,
+      "tutorsJoind": [],
+      "id": 13
+    },
+    {
+      "date": "2023-09-27",
+      "studentsAttended": 0,
+      "questionsAnswered": 0,
+      "tutorsJoind": [],
+      "id": 14
     }
   ],
   "categories": [
@@ -317,6 +350,11 @@
               "reply": "raja shajjar",
               "repliedAt": "2023-09-16T09:16:29.978Z",
               "content": "Microsoft Windows is a group of several proprietary graphical operating system families developed and marketed by Microsoft. Each family caters to a certain sector of the computing industry. "
+            },
+            {
+              "reply": "Wasif Shahid",
+              "repliedAt": "2023-09-25T07:22:55.883Z",
+              "content": "Sir i have query Wtf!!!"
             }
           ]
         },
@@ -353,6 +391,15 @@
             "completed": true,
             "completedAt": "2023-09-16T14:55:26.830Z"
           },
+          "discussion": []
+        },
+        {
+          "id": "0.10090959425690671",
+          "title": "can you please brief me ",
+          "askedby": "zeeshan naseeb",
+          "askedat": "2023-09-26T10:25:21.743Z",
+          "answeredBy": null,
+          "assigned": {},
           "discussion": []
         }
       ],
@@ -397,6 +444,15 @@
               "content": "Processing and distribution center\nProcessing and distribution center (P&DC) — an organizational entity, subordinate to an area, with significant responsibility for the processing and distribution of mail for a geographic area. A P&DC may have one or more reporting facilities."
             }
           ]
+        },
+        {
+          "id": "0.7969161498036332",
+          "title": "What is TEST?",
+          "askedby": "Wasif Shahid",
+          "askedat": "2023-09-25T07:24:44.401Z",
+          "answeredBy": null,
+          "assigned": {},
+          "discussion": []
         }
       ],
       "categoryId": "1",

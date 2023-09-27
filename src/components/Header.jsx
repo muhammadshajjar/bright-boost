@@ -12,7 +12,7 @@ import { GrUserAdmin } from "react-icons/gr";
 import { CiLogout } from "react-icons/ci";
 
 const Header = () => {
-  const { token, logout } = useContext(AuthContext);
+  const { token, logout, role } = useContext(AuthContext);
 
   const USERITEMS = [
     {
