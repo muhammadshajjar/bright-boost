@@ -36,16 +36,6 @@
       "id": 5
     },
     {
-      "firstName": "Muhammad",
-      "lastName": "Shajjar",
-      "email": "tt@tt.com",
-      "password": "123456",
-      "expertiesArea": [
-        "TEST"
-      ],
-      "id": 6
-    },
-    {
       "firstname": "Wasif",
       "lastname": "Shahid",
       "email": "wasif@test.com",
@@ -92,7 +82,7 @@
       "lastname": "Shajjar",
       "email": "tt@test.com",
       "password": "123456",
-      "expertiesArea": [
+      "expertiseArea": [
         "TEST "
       ],
       "id": 4
@@ -114,7 +104,7 @@
       "questionsAnswered": 0,
       "tutorsJoind": [
         {
-          "tutorID": 2
+          "tutorID": 1
         },
         {
           "tutorID": 2
@@ -135,8 +125,8 @@
     },
     {
       "date": "2023-09-20",
-      "studentsAttended": 0,
-      "questionsAnswered": 0,
+      "studentsAttended": 20,
+      "questionsAnswered": 10,
       "tutorsJoind": [
         {
           "tutorID": 1
@@ -149,8 +139,8 @@
     },
     {
       "date": "2023-09-21",
-      "studentsAttended": 0,
-      "questionsAnswered": 0,
+      "studentsAttended": 4,
+      "questionsAnswered": 23,
       "tutorsJoind": [
         {
           "tutorID": 4
@@ -160,8 +150,8 @@
     },
     {
       "date": "2023-09-22",
-      "studentsAttended": 0,
-      "questionsAnswered": 0,
+      "studentsAttended": 23,
+      "questionsAnswered": 23,
       "tutorsJoind": [
         {
           "tutorID": 4
@@ -171,8 +161,8 @@
     },
     {
       "date": "2023-09-25",
-      "studentsAttended": 2,
-      "questionsAnswered": 0,
+      "studentsAttended": 45,
+      "questionsAnswered": 32,
       "tutorsJoind": [
         {
           "tutorID": 4
@@ -183,7 +173,7 @@
     {
       "date": "2023-09-26",
       "studentsAttended": 1,
-      "questionsAnswered": 0,
+      "questionsAnswered": 12,
       "tutorsJoind": [],
       "id": 13
     },
@@ -193,6 +183,27 @@
       "questionsAnswered": 0,
       "tutorsJoind": [],
       "id": 14
+    },
+    {
+      "date": "2023-09-29",
+      "studentsAttended": 0,
+      "questionsAnswered": 0,
+      "tutorsJoind": [],
+      "id": 15
+    },
+    {
+      "date": "2023-09-30",
+      "studentsAttended": 0,
+      "questionsAnswered": 0,
+      "tutorsJoind": [],
+      "id": 16
+    },
+    {
+      "date": "2023-10-01",
+      "studentsAttended": 0,
+      "questionsAnswered": 0,
+      "tutorsJoind": [],
+      "id": 17
     }
   ],
   "categories": [

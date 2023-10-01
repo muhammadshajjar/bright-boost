@@ -27,7 +27,6 @@ const LoginForm = () => {
     try {
       setIsLoading(true);
       const response = await axios.get(`${LOGINAPIURL}?email=${values.email}`);
-      console.log(response);
 
       if (response.data.length > 0) {
         const { password, id, firstname, lastname } = response.data[0];
@@ -38,30 +37,28 @@ const LoginForm = () => {
           lastname,
         };
 
-        console.log(firstname, lastname);
-
         if (password == values.password) {
-          console.log(authCtx.activeSessionId);
-          const session = await axios.get(
-            `http://localhost:3000/session/${authCtx.activeSessionId}`
-          );
+          // console.log(authCtx.activeSessionId);
+          // const session = await axios.get(
+          //   `http://localhost:3000/session/${authCtx.activeSessionId}`
+          // );
 
-          const updatedSessionData = session.data;
-          if (authCtx.role === "student") {
-            updatedSessionData.studentsAttended =
-              ++updatedSessionData.studentsAttended;
-          } else if (authCtx.role == "tutor") {
-            updatedSessionData.tutorsJoind.push({ tutorID: id });
-          }
+          // const updatedSessionData = session.data;
+          // if (authCtx.role === "student") {
+          //   updatedSessionData.studentsAttended =
+          //     ++updatedSessionData.studentsAttended;
+          // } else if (authCtx.role == "tutor") {
+          //   updatedSessionData.tutorsJoind.push({ tutorID: id });
+          // }
 
-          console.log(updatedSessionData);
+          // console.log(updatedSessionData);
 
-          const updateSessoin = await axios.patch(
-            `http://localhost:3000/session/${authCtx.activeSessionId}`,
-            updatedSessionData
-          );
+          // const updateSessoin = await axios.patch(
+          //   `http://localhost:3000/session/${authCtx.activeSessionId}`,
+          //   updatedSessionData
+          // );
 
-          console.log(updateSessoin);
+          // console.log(updateSessoin);
 
           authCtx.login(userData);
           notification.success({

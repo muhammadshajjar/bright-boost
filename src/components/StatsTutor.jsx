@@ -1,13 +1,16 @@
 import "./StatsTutor.css";
 
-const StatsTutor = () => {
+const StatsTutor = ({ tutor }) => {
   return (
     <>
       <div className="avaliable-tutor">
-        <p>Sikander Hayat</p>
+        <p>
+          {tutor?.firstname} {tutor.lastname}
+        </p>
         <ul className="skills">
-          <li>ICT</li>
-          <li>Development</li>
+          {tutor?.expertiseArea?.map((item) => (
+            <li>{item}</li>
+          ))}
         </ul>
       </div>
     </>

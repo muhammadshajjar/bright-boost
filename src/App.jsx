@@ -77,7 +77,6 @@ const App = () => {
     //   } catch (e) {
     //     console.log(e);
     //   }
-    // };
     const checkSession = async () => {
       try {
         const response = await axios.get(SESSIONSAPIURL);
