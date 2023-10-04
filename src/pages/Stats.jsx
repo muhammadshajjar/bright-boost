@@ -12,6 +12,9 @@ import { getCalendarFormatDate } from "../helper/getCalendarFormatDate";
 
 const SESSIONSAPIURL = "http://localhost:3000/session";
 const TUTORSAPIURL = "http://localhost:3000/tutors";
+
+import { Line } from "@ant-design/plots";
+
 const Stats = () => {
   const [sessionData, setSessionData] = useState([]);
   const [currentPage, setCurrentPage] = useState(0);
@@ -71,7 +74,78 @@ const Stats = () => {
       setCurrentPage(currentPage - 1);
     }
   };
-  console.log(sessionsToDisplay);
+
+  const config = {
+    data: sessionData || [],
+    padding: "auto",
+    xField: "date",
+    yField: "studentsAttended",
+    xAxis: {
+      // type: 'timeCat',
+      tickCount: 5,
+    },
+    smooth: true,
+    lineStyle: {
+      stroke: "#ffb84d",
+      lineWidth: 2,
+      cursor: "pointer",
+    },
+    tooltip: {
+      customContent: (title, items) => {
+        return (
+          <>
+            <h3 style={{ marginTop: 16 }}>{title}</h3>
+            <ul style={{ paddingLeft: 0 }}>
+              {items?.map((item, index) => {
+                const { name, value, color } = item;
+                return (
+                  <li
+                    key={item.year}
+                    className="g2-tooltip-list-item"
+                    data-index={index}
+                    style={{
+                      marginBottom: 4,
+                      display: "flex",
+                      alignItems: "center",
+                    }}
+                  >
+                    <span
+                      style={{
+                        display: "inline-flex",
+                        flex: 1,
+                        justifyContent: "space-between",
+                        flexDirection: "column",
+                        gap: "10px",
+                      }}
+                    >
+                      <div>
+                        <span style={{ marginRight: 16 }}>
+                          Students Joined:
+                        </span>
+                        <span className="g2-tooltip-list-item-value">
+                          {value}
+                        </span>
+                      </div>
+
+                      <div>
+                        <span style={{ marginRight: 16 }}>
+                          Questions Answered:
+                        </span>
+                        <span className="g2-tooltip-list-item-value">
+                          {item.data.questionsAnswered}
+                        </span>
+                      </div>
+                    </span>
+                  </li>
+                );
+              })}
+            </ul>
+          </>
+        );
+      },
+    },
+  };
+  console.log(sessionData);
   return (
     <div className="container">
       <Row className="page-heading" align="middle">
@@ -132,7 +206,7 @@ const Stats = () => {
         />
       </Row>
 
-      <Row className="charts-container"></Row>
+      <div className="charts-container">{<Line {...config} />}</div>
     </div>
   );
 };

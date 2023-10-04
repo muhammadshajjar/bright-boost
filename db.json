@@ -204,6 +204,27 @@
       "questionsAnswered": 0,
       "tutorsJoind": [],
       "id": 17
+    },
+    {
+      "date": "2023-10-02",
+      "studentsAttended": 0,
+      "questionsAnswered": 0,
+      "tutorsJoind": [],
+      "id": 18
+    },
+    {
+      "date": "2023-10-03",
+      "studentsAttended": 0,
+      "questionsAnswered": 0,
+      "tutorsJoind": [],
+      "id": 19
+    },
+    {
+      "date": "2023-10-04",
+      "studentsAttended": 0,
+      "questionsAnswered": 0,
+      "tutorsJoind": [],
+      "id": 20
     }
   ],
   "categories": [
@@ -317,7 +338,12 @@
           "askedby": "zeeshan naseeb",
           "askedat": "2023-09-20T09:19:49.480Z",
           "answeredBy": null,
-          "assigned": {},
+          "assigned": {
+            "tutor": "raja shajjar",
+            "assignedAt": "2023-10-02T10:56:26.839Z",
+            "completed": false,
+            "completedAt": ""
+          },
           "discussion": []
         },
         {
