@@ -7,6 +7,7 @@ import { Row, Col, Button } from "antd";
 import { Link } from "react-router-dom";
 
 import whyUsIllustration from "../assets/why-us-illustraion-bg.png";
+import resourcesIllustration from "../assets/studyillustration.png";
 import firstProfile from "../assets/profile-1.jpg";
 import secondProfile from "../assets/profile-2.jpg";
 import thirdProfile from "../assets/profile-3.jpg";
@@ -76,16 +77,18 @@ const Home = () => {
           <h1>
             Guiding <span>Students</span> Towards Academic Excellence
           </h1>
+
           <p>
             At Bright Boost, we're more than just an after-school program. We're
             a community dedicated to helping high school students excel in their
             studies. Our mission is to provide the support and resources they
             need to thrive academically.
           </p>
+
           <Button type="primary">Discover now</Button>
         </div>
       </section>
-      <section className="categories">
+      <section className="categories" id="categories">
         <div className="categories-content container">
           <h2>Popular Categories</h2>
           <p>Please choose any category to go on dicussion forum page</p>
@@ -103,10 +106,10 @@ const Home = () => {
           </Row>
         </div>
       </section>
-      <section className="why-us container">
+      <section className="why-us container" id="why-us">
         <Row justify="space-between" align="middle">
           <Col span={14}>
-            <img src={whyUsIllustration} alt="" />
+            <img src={whyUsIllustration} alt="Why us illustration" />
           </Col>
           <Col span={10}>
             <h2>Why Choose Bright Boost</h2>
@@ -141,7 +144,52 @@ const Home = () => {
           </Col>
         </Row>
       </section>
-      <section className="review">
+      <section className="resources container" id="resources">
+        <Row justify="space-between" align="middle">
+          <Col span={10}>
+            <h2>Study Resources</h2>
+            <p>
+              Access comprehensive study guides covering various subjects and
+              topics. Our study guides are designed to simplify complex concepts
+              and help you grasp key information quickly
+            </p>
+
+            <ul className="list">
+              <Row align="middle">
+                <PiDotDuotone style={{ color: "#ffb84d", fontSize: "50px" }} />
+                <a href="https://www.w3schools.com/">W3schools</a>
+              </Row>
+              <Row align="middle">
+                <PiDotDuotone style={{ color: "#ffb84d", fontSize: "50px" }} />
+                <a href="https://developer.mozilla.org/en-US/">
+                  Mozilla Developer Docs
+                </a>
+              </Row>
+              <Row align="middle">
+                <PiDotDuotone style={{ color: "#ffb84d", fontSize: "50px" }} />
+                <a href="https://www.scaler.com/topics/">Scalar Topics</a>
+              </Row>
+              <Row align="middle">
+                <PiDotDuotone style={{ color: "#ffb84d", fontSize: "50px" }} />
+                <a href="https://study.com/academy/lesson/what-is-communication-definition-importance.html">
+                  Study.com
+                </a>
+              </Row>
+              <Row align="middle">
+                <PiDotDuotone style={{ color: "#ffb84d", fontSize: "50px" }} />
+                <a href="https://www.educative.io/">Educative</a>
+              </Row>
+            </ul>
+          </Col>
+          <Col span={14}>
+            <img
+              src={resourcesIllustration}
+              alt="Study Resources Illustration"
+            />
+          </Col>
+        </Row>
+      </section>
+      <section className="review" id="students-comment">
         <div className="container">
           <div className="review-heading">
             <h2>Our Happy Students</h2>

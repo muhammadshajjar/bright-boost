@@ -225,6 +225,20 @@
       "questionsAnswered": 0,
       "tutorsJoind": [],
       "id": 20
+    },
+    {
+      "date": "2023-10-05",
+      "studentsAttended": 0,
+      "questionsAnswered": 0,
+      "tutorsJoind": [],
+      "id": 21
+    },
+    {
+      "date": "2023-10-09",
+      "studentsAttended": 0,
+      "questionsAnswered": 0,
+      "tutorsJoind": [],
+      "id": 22
     }
   ],
   "categories": [
@@ -582,6 +596,43 @@
       ],
       "categoryId": "6",
       "id": 17
+    },
+    {
+      "title": "Biology",
+      "questions": [
+        {
+          "id": "0.7710071719180343",
+          "title": "What is Biology",
+          "askedby": "zeeshan naseeb",
+          "askedat": "2023-10-09T04:14:48.619Z",
+          "answeredBy": null,
+          "assigned": {
+            "tutor": "raja shajjar",
+            "assignedAt": "2023-10-09T04:15:06.304Z",
+            "completed": true,
+            "completedAt": "2023-10-09T04:18:29.103Z"
+          },
+          "discussion": [
+            {
+              "reply": "raja shajjar",
+              "repliedAt": "2023-10-09T04:15:22.538Z",
+              "content": "I'll tell you this in the future be patient!!"
+            },
+            {
+              "reply": "zeeshan naseeb",
+              "repliedAt": "2023-10-09T04:16:34.622Z",
+              "content": "OKay sir i'm waiting for your response and i don't have much time please make it quick :)"
+            },
+            {
+              "reply": "raja shajjar",
+              "repliedAt": "2023-10-09T04:18:21.643Z",
+              "content": "Biology is the scientific study of life. It is a natural science with a broad scope but has several unifying themes that tie it together as a single, coherent field. For instance, all organisms are made up of cells that process hereditary information encoded in genes, which can be transmitted to future generations."
+            }
+          ]
+        }
+      ],
+      "categoryId": "5",
+      "id": 18
     }
   ]
 }

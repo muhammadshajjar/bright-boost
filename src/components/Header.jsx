@@ -17,12 +17,21 @@ const Header = () => {
   const USERITEMS = [
     {
       key: "1",
-      label: <Link to="/admin">Settings</Link>,
+      label: <Link to="/admin">Admin</Link>,
       icon: <GrUserAdmin />,
     },
     {
       key: "2",
-      label: <button onClick={() => logout()}>Logout</button>,
+      label: (
+        <button
+          onClick={() => {
+            logout();
+            console.log("Clicked on logout!!");
+          }}
+        >
+          Logout
+        </button>
+      ),
       icon: <CiLogout />,
     },
   ];
@@ -34,11 +43,11 @@ const Header = () => {
     },
     {
       key: "2",
-      label: <a href="#">Why Choose us</a>,
+      label: <a href="#why-us">Why Choose us</a>,
     },
     {
       key: "3",
-      label: <a href="#">Comments From Students</a>,
+      label: <a href="#students-comment">Comments From Students</a>,
     },
   ];
   return (
@@ -70,15 +79,18 @@ const Header = () => {
               </li>
 
               <li>
-                <a href="#">Categories</a>
+                <a href="#categories">Categories</a>
               </li>
               <li>
-                <a href="#">Study Resources</a>
+                <a href="#resources">Study Resources</a>
               </li>
 
               <Dropdown
                 menu={{
-                  items: USERITEMS,
+                  items:
+                    role === "admin"
+                      ? USERITEMS
+                      : USERITEMS.filter((item) => item.key !== "1"),
                 }}
                 trigger={["click"]}
                 className="user-profile"
