@@ -25,7 +25,8 @@ const DiscussionForum = () => {
   const [threads, setThreads] = useState([]);
   const [newThread, setNewThread] = useState("");
   const [answer, setAnswer] = useState("");
-  const { firstName, lastName, role } = useContext(AuthContext);
+  const { firstName, lastName, role, activeSessionId } =
+    useContext(AuthContext);
 
   useEffect(() => {
     const getThreads = async () => {
@@ -143,6 +144,24 @@ const DiscussionForum = () => {
     } catch (e) {
       alert(e.message);
     }
+
+    try {
+      const session = await axios.get(
+        `http://localhost:3000/session/${activeSessionId}`
+      );
+
+      const updatedSessionData = session.data;
+      updatedSessionData.questionsAnswered =
+        ++updatedSessionData.questionsAnswered;
+
+      await axios.patch(
+        `http://localhost:3000/session/${activeSessionId}`,
+        updatedSessionData
+      );
+    } catch (e) {
+      alert(e.message);
+    }
+
     setSelectedQuestion(updateSelectedQuestion);
   };
 
@@ -223,8 +242,6 @@ const DiscussionForum = () => {
     setSelectedThread(updateSelectedThread);
   };
 
-  console.log(selectedQuestion);
-
   let toShowTheDiscussionForum;
 
   if (
@@ -299,7 +316,7 @@ const DiscussionForum = () => {
             </Button>
           </Space.Compact>
         </Col>
-        <Col span={8} className="column ">
+        <Col span={8} className="column question-column">
           <h2 className="title">Questions</h2>
           {selectedThread && (
             <>

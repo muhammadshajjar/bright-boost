@@ -227,18 +227,46 @@
       "id": 20
     },
     {
-      "date": "2023-10-05",
-      "studentsAttended": 0,
+      "date": "2023-10-11",
+      "studentsAttended": 1,
       "questionsAnswered": 0,
-      "tutorsJoind": [],
+      "tutorsJoind": [
+        {
+          "tutorID": 2
+        },
+        {
+          "tutorID": 3
+        }
+      ],
       "id": 21
     },
     {
-      "date": "2023-10-09",
-      "studentsAttended": 0,
+      "date": "2023-10-12",
+      "studentsAttended": 2,
       "questionsAnswered": 0,
-      "tutorsJoind": [],
+      "tutorsJoind": [
+        {
+          "tutorID": 2
+        },
+        {
+          "tutorID": 2
+        }
+      ],
       "id": 22
+    },
+    {
+      "date": "2023-10-14",
+      "studentsAttended": 2,
+      "questionsAnswered": 2,
+      "tutorsJoind": [
+        {
+          "tutorID": 2
+        },
+        {
+          "tutorID": 1
+        }
+      ],
+      "id": 23
     }
   ],
   "categories": [
@@ -451,7 +479,53 @@
           "askedat": "2023-09-26T10:25:21.743Z",
           "answeredBy": null,
           "assigned": {},
-          "discussion": []
+          "discussion": [
+            {
+              "reply": "sikander bakht",
+              "repliedAt": "2023-10-14T12:48:47.198Z",
+              "content": "test\n"
+            },
+            {
+              "reply": "sikander bakht",
+              "repliedAt": "2023-10-14T12:49:04.380Z",
+              "content": "Another answer submitted"
+            },
+            {
+              "reply": "sikander bakht",
+              "repliedAt": "2023-10-14T12:51:22.389Z",
+              "content": "test1"
+            },
+            {
+              "reply": "sikander bakht",
+              "repliedAt": "2023-10-14T12:52:36.449Z",
+              "content": "test"
+            },
+            {
+              "reply": "sikander bakht",
+              "repliedAt": "2023-10-14T12:53:22.595Z",
+              "content": "dtestses"
+            },
+            {
+              "reply": "sikander bakht",
+              "repliedAt": "2023-10-14T12:53:59.493Z",
+              "content": "test"
+            },
+            {
+              "reply": "sikander bakht",
+              "repliedAt": "2023-10-14T12:55:54.801Z",
+              "content": "test"
+            },
+            {
+              "reply": "sikander bakht",
+              "repliedAt": "2023-10-14T12:56:31.351Z",
+              "content": "test"
+            },
+            {
+              "reply": "sikander bakht",
+              "repliedAt": "2023-10-14T12:57:34.625Z",
+              "content": "antoehr test"
+            }
+          ]
         }
       ],
       "categoryId": "2",
@@ -633,6 +707,33 @@
       ],
       "categoryId": "5",
       "id": 18
+    },
+    {
+      "title": "new Thread",
+      "questions": [
+        {
+          "id": "0.13603489887286435",
+          "title": "TEST question",
+          "askedby": "sikander bakht",
+          "askedat": "2023-10-14T12:57:59.134Z",
+          "answeredBy": null,
+          "assigned": {
+            "tutor": "sikander bakht",
+            "assignedAt": "2023-10-14T13:38:03.544Z",
+            "completed": false,
+            "completedAt": ""
+          },
+          "discussion": [
+            {
+              "reply": "sikander bakht",
+              "repliedAt": "2023-10-14T12:58:11.437Z",
+              "content": "i want to like to answer this question"
+            }
+          ]
+        }
+      ],
+      "categoryId": "2",
+      "id": 19
     }
   ]
 }

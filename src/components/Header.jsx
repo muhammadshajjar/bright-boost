@@ -2,7 +2,7 @@ import { useContext } from "react";
 import "./Header.css";
 import { Avatar, Dropdown } from "antd";
 import logo from "../assets/brightbosstlogo.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import { AuthContext } from "../context/auth-context";
 //react icons
@@ -13,6 +13,8 @@ import { CiLogout } from "react-icons/ci";
 
 const Header = () => {
   const { token, logout, role } = useContext(AuthContext);
+
+  const { pathname } = useLocation();
 
   const USERITEMS = [
     {
@@ -61,29 +63,33 @@ const Header = () => {
         {token && (
           <nav>
             <ul className="header-nav">
-              <li>
-                <a href="#">Home</a>
-              </li>
-              <li>
-                <Dropdown
-                  menu={{
-                    items: INTROITEMS,
-                  }}
-                  trigger={["hover"]}
-                >
-                  <a>
-                    Introduction
-                    <AiOutlineDown />
-                  </a>
-                </Dropdown>
-              </li>
+              {pathname !== "/admin" && pathname !== "/discussion-fourm" && (
+                <>
+                  <li>
+                    <a href="#">Home</a>
+                  </li>
+                  <li>
+                    <Dropdown
+                      menu={{
+                        items: INTROITEMS,
+                      }}
+                      trigger={["hover"]}
+                    >
+                      <a>
+                        Introduction
+                        <AiOutlineDown />
+                      </a>
+                    </Dropdown>
+                  </li>
 
-              <li>
-                <a href="#categories">Categories</a>
-              </li>
-              <li>
-                <a href="#resources">Study Resources</a>
-              </li>
+                  <li>
+                    <a href="#categories">Categories</a>
+                  </li>
+                  <li>
+                    <a href="#resources">Study Resources</a>
+                  </li>
+                </>
+              )}
 
               <Dropdown
                 menu={{

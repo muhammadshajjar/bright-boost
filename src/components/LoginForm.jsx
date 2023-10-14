@@ -38,27 +38,27 @@ const LoginForm = () => {
         };
 
         if (password == values.password) {
-          // console.log(authCtx.activeSessionId);
-          // const session = await axios.get(
-          //   `http://localhost:3000/session/${authCtx.activeSessionId}`
-          // );
+          console.log(authCtx.activeSessionId);
+          const session = await axios.get(
+            `http://localhost:3000/session/${authCtx.activeSessionId}`
+          );
 
-          // const updatedSessionData = session.data;
-          // if (authCtx.role === "student") {
-          //   updatedSessionData.studentsAttended =
-          //     ++updatedSessionData.studentsAttended;
-          // } else if (authCtx.role == "tutor") {
-          //   updatedSessionData.tutorsJoind.push({ tutorID: id });
-          // }
+          const updatedSessionData = session.data;
+          if (authCtx.role === "student") {
+            updatedSessionData.studentsAttended =
+              ++updatedSessionData.studentsAttended;
+          } else if (authCtx.role == "tutor") {
+            updatedSessionData.tutorsJoind.push({ tutorID: id });
+          }
 
-          // console.log(updatedSessionData);
+          console.log(updatedSessionData);
 
-          // const updateSessoin = await axios.patch(
-          //   `http://localhost:3000/session/${authCtx.activeSessionId}`,
-          //   updatedSessionData
-          // );
+          const updateSessoin = await axios.patch(
+            `http://localhost:3000/session/${authCtx.activeSessionId}`,
+            updatedSessionData
+          );
 
-          // console.log(updateSessoin);
+          console.log(updateSessoin);
 
           authCtx.login(userData);
           notification.success({

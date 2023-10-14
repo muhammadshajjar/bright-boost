@@ -76,6 +76,10 @@
   background-color: var(--primary-blue);
 }
 
+.question-column ul {
+  height: 220px;
+  overflow: scroll;
+}
 .question-details {
   background-color: #f0f0f0;
   padding: 10px;
@@ -95,7 +99,7 @@
   width: 95%;
   margin-left: auto;
   flex: 1;
-  max-height: 460px;
+  max-height: 330px;
   overflow-y: scroll;
   margin-bottom: 20px;
 }

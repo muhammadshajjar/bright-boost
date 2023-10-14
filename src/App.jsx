@@ -1,4 +1,4 @@
-import { useEffect, useContext } from "react";
+import { useEffect, useContext, useState } from "react";
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { AuthContext } from "./context/auth-context";
@@ -67,17 +67,11 @@ const router = createBrowserRouter([
 
 const App = () => {
   const { activeSession } = useContext(AuthContext);
+
+  const [loading, setIsLoading] = useState(true);
   useEffect(() => {
-    // const getIdOfLatestSession = async () => {
-    //   try {
-    //     const response = await axios.get(SESSIONSAPIURL);
-    //     const sessionID = response.data[response.data.length - 1].id;
-    //     console.log(sessionID);
-    //     activeSession(sessionID);
-    //   } catch (e) {
-    //     console.log(e);
-    //   }
     const checkSession = async () => {
+      console.log("CHECKING THE SESSION!!");
       try {
         const response = await axios.get(SESSIONSAPIURL);
         const sessions = response.data;
@@ -96,6 +90,9 @@ const App = () => {
       } catch (e) {
         alert(e.message);
       }
+
+      getIdOfLatestSession();
+      setIsLoading(false);
     };
 
     const createNewSession = async () => {
@@ -109,8 +106,17 @@ const App = () => {
       await axios.post(SESSIONSAPIURL, newSession);
     };
 
+    const getIdOfLatestSession = async () => {
+      try {
+        const response = await axios.get(SESSIONSAPIURL);
+        const sessionID = response.data[response.data.length - 1].id;
+        console.log(sessionID);
+        activeSession(sessionID);
+      } catch (e) {
+        console.log(e);
+      }
+    };
     checkSession();
-    // getIdOfLatestSession();
   }, []);
   return (
     <ConfigProvider
@@ -121,7 +127,8 @@ const App = () => {
         },
       }}
     >
-      <RouterProvider router={router} />
+      {!loading && <RouterProvider router={router} />}
+      {loading && <p>checking the session</p>}
     </ConfigProvider>
   );
 };
