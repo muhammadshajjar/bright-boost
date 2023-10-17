@@ -25,38 +25,6 @@ const Home = () => {
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
-    // const checkSession = async () => {
-    //   try {
-    //     const response = await axios.get(SESSIONSAPIURL);
-    //     const sessions = response.data;
-
-    //     if (sessions.length === 0) {
-    //       createNewSession();
-    //     } else {
-    //       const lastSession = sessions[sessions.length - 1];
-
-    //       const currentDate = new Date().toISOString().split("T")[0];
-
-    //       if (lastSession.date !== currentDate) {
-    //         createNewSession();
-    //       }
-    //     }
-    //   } catch (e) {
-    //     alert(e.message);
-    //   }
-    // };
-
-    // const createNewSession = async () => {
-    //   const currentDate = new Date().toISOString().split("T")[0];
-    //   const newSession = {
-    //     date: currentDate,
-    //     studentsAttended: 0,
-    //     questionsAnswered: 0,
-    //   };
-
-    //   await axios.post(SESSIONSAPIURL, newSession);
-    // };
-
     const getAllCategories = async () => {
       try {
         const response = await axios.get(CATEGORIESAPIURL);
@@ -108,10 +76,10 @@ const Home = () => {
       </section>
       <section className="why-us container" id="why-us">
         <Row justify="space-between" align="middle">
-          <Col span={14}>
+          <Col lg={10} sm={24}>
             <img src={whyUsIllustration} alt="Why us illustration" />
           </Col>
-          <Col span={10}>
+          <Col lg={14} sm={24}>
             <h2>Why Choose Bright Boost</h2>
             <p>
               Unlike traditional tutoring programs that may focus solely on
@@ -145,8 +113,12 @@ const Home = () => {
         </Row>
       </section>
       <section className="resources container" id="resources">
-        <Row justify="space-between" align="middle">
-          <Col span={10}>
+        <Row
+          justify="space-between"
+          align="middle"
+          style={{ marginTop: "50px" }}
+        >
+          <Col lg={10} sm={24}>
             <h2>Study Resources</h2>
             <p>
               Access comprehensive study guides covering various subjects and
@@ -181,7 +153,7 @@ const Home = () => {
               </Row>
             </ul>
           </Col>
-          <Col span={14}>
+          <Col lg={14} sm={24}>
             <img
               src={resourcesIllustration}
               alt="Study Resources Illustration"
@@ -214,7 +186,7 @@ const Home = () => {
                 />
                 <div>
                   <h3 className="profile__title">Satish Patel</h3>
-                  <p className="profile__disc">Happy customer</p>
+                  <p className="profile__disc">Happy Students</p>
                 </div>
               </figcaption>
             </figure>
@@ -236,7 +208,7 @@ const Home = () => {
                 />
                 <div>
                   <h3 className="profile__title">Bruce McKenzie</h3>
-                  <p className="profile__disc">Happy customer</p>
+                  <p className="profile__disc">Happy Students</p>
                 </div>
               </figcaption>
             </figure>
@@ -258,7 +230,7 @@ const Home = () => {
                 />
                 <div>
                   <h3 className="profile__title">Iva Boyd</h3>
-                  <p className="profile__disc">Happy customer</p>
+                  <p className="profile__disc">Happy Students</p>
                 </div>
               </figcaption>
             </figure>

@@ -256,7 +256,7 @@
     },
     {
       "date": "2023-10-14",
-      "studentsAttended": 2,
+      "studentsAttended": 3,
       "questionsAnswered": 2,
       "tutorsJoind": [
         {
@@ -267,6 +267,31 @@
         }
       ],
       "id": 23
+    },
+    {
+      "date": "2023-10-15",
+      "studentsAttended": 2,
+      "questionsAnswered": 1,
+      "tutorsJoind": [
+        {
+          "tutorID": 2
+        },
+        {
+          "tutorID": 2
+        }
+      ],
+      "id": 24
+    },
+    {
+      "date": "2023-10-17",
+      "studentsAttended": 4,
+      "questionsAnswered": 1,
+      "tutorsJoind": [
+        {
+          "tutorID": 2
+        }
+      ],
+      "id": 25
     }
   ],
   "categories": [
@@ -576,7 +601,32 @@
           "askedby": "Wasif Shahid",
           "askedat": "2023-09-25T07:24:44.401Z",
           "answeredBy": null,
-          "assigned": {},
+          "assigned": {
+            "tutor": "raja shajjar",
+            "assignedAt": "2023-10-15T06:47:55.144Z",
+            "completed": false,
+            "completedAt": ""
+          },
+          "discussion": [
+            {
+              "reply": "raja shajjar",
+              "repliedAt": "2023-10-15T06:48:03.364Z",
+              "content": "This is only test>>>"
+            }
+          ]
+        },
+        {
+          "id": "0.8130812192065922",
+          "title": "TEST",
+          "askedby": "raja shajjar",
+          "askedat": "2023-10-15T06:48:08.088Z",
+          "answeredBy": null,
+          "assigned": {
+            "tutor": "raja shajjar",
+            "assignedAt": "2023-10-15T06:48:12.364Z",
+            "completed": false,
+            "completedAt": ""
+          },
           "discussion": []
         }
       ],
@@ -703,6 +753,26 @@
               "content": "Biology is the scientific study of life. It is a natural science with a broad scope but has several unifying themes that tie it together as a single, coherent field. For instance, all organisms are made up of cells that process hereditary information encoded in genes, which can be transmitted to future generations."
             }
           ]
+        },
+        {
+          "id": "0.6217493605496596",
+          "title": "Explain more details",
+          "askedby": "zeeshan naseeb",
+          "askedat": "2023-10-17T06:35:25.674Z",
+          "answeredBy": null,
+          "assigned": {
+            "tutor": "raja shajjar",
+            "assignedAt": "2023-10-17T06:35:41.514Z",
+            "completed": false,
+            "completedAt": ""
+          },
+          "discussion": [
+            {
+              "reply": "raja shajjar",
+              "repliedAt": "2023-10-17T06:35:48.108Z",
+              "content": "I'll later today."
+            }
+          ]
         }
       ],
       "categoryId": "5",
@@ -734,6 +804,12 @@
       ],
       "categoryId": "2",
       "id": 19
+    },
+    {
+      "title": "TESTTTS",
+      "questions": [],
+      "categoryId": "1",
+      "id": 20
     }
   ]
 }
