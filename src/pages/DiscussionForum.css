@@ -77,7 +77,7 @@
 }
 
 .question-column ul {
-  height: 220px;
+  max-height: 150px;
   overflow: scroll;
 }
 .question-details {
@@ -99,7 +99,7 @@
   width: 95%;
   margin-left: auto;
   flex: 1;
-  max-height: 330px;
+  max-height: 230px;
   overflow-y: scroll;
   margin-bottom: 20px;
 }
